@@ -331,7 +331,7 @@ button {
 
 .Project {
   position: relative;
-  width: 300px;
+  width: 250px;
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
