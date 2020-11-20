@@ -154,11 +154,8 @@ button {
   padding-top: 120px;
   text-align: center;
 }
-.home_contact{
-  color: rgb(255, 9, 9);
-}
 
-.home_contact:hover{
+.home_contact:hover {
   background-color: rgb(70, 39, 39);
 }
 
@@ -175,7 +172,7 @@ button {
 }
 
 .home_contact {
-  color: violet);
+  color: rgb(235, 23, 23);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
@@ -202,12 +199,11 @@ button {
 }
 /* About */
 
-#about{
+#about {
   background-color: rgba(36, 31, 35, 0.877);
-  
 }
 #about h1,
-#about p{
+#about p {
   color: rgb(255, 145, 145);
 }
 .about_majors {
@@ -240,7 +236,7 @@ button {
 
 .major_title,
 .major_description {
-  color: rgb(216, 147, 94);;
+  color: rgb(216, 147, 94);
 }
 
 .major_description {
@@ -276,7 +272,7 @@ button {
   background-color: rgb(119, 103, 103);
 }
 
-.section_container h2{
+.section_container h2 {
   color: #581b2a;
 }
 
@@ -331,7 +327,7 @@ button {
 
 /* work */
 
-#work{
+#work {
   background-color: #815959;
 }
 .category_btn.active,
