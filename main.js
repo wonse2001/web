@@ -23,13 +23,13 @@ navbarMenu.addEventListener('click',(event) =>{
     if(link1 == null){
         return;
     }
-    srollIntoView(link1);
+    scrollIntoView(link1);
 });
 
 // Handle click on "contact me" button on home
 const contactMenu = document.querySelector('.home_contact');
 contactMenu.addEventListener('click',() =>{
-    srollIntoView('#contact');
+    scrollIntoView('#contact');
 });
 
 
@@ -42,19 +42,28 @@ document.addEventListener('scroll', () =>{
 
 
 
+// show "arrow up" button when scrolling down
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight/2){
+        arrowUp.classList.add('visible');
+    }else{
+        arrowUp.classList.remove('visible');
+    }
+});
+
+// Handle click on the "arrow up" button
+
+arrowUp.addEventListener('click', ()=>{
+    scrollIntoView('#home');
+});
 
 
 
 
 
 
-
-
-
-
-
-
-function srollIntoView(selector){
+function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
 }
