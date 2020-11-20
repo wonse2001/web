@@ -103,10 +103,11 @@ button {
   color: var(--color-white);
   padding: 16px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
-  background-color: rgba(201, 41, 81, 0.993);
+  background-color: rgba(119, 41, 60, 0.993);
   padding: 8px;
 }
 
@@ -158,16 +159,16 @@ button {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 2px solid var(--color-light-white);
+  border: 2px solid var(--color-white);
 }
 
 .home_title,
 .home_description {
-  color: var(--color-white);
+  color: wheat;
 }
 
 .home_contact {
-  color: var(--color-white);
+  color: violet);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
@@ -194,6 +195,14 @@ button {
 }
 /* About */
 
+#about{
+  background-color: rgba(36, 31, 35, 0.877);
+  
+}
+#about h1,
+#about p{
+  color: rgb(255, 145, 145);
+}
 .about_majors {
   display: flex;
   justify-content: space-between;
@@ -206,10 +215,10 @@ button {
   line-height: 170px;
   font-size: 70px;
   margin: auto;
-  border: 1px solid var(--color-dark-white);
+  border: 1px solid rgb(136, 245, 227);
   border-radius: 50%;
   margin-bottom: 16px;
-  color: var(--color-dark-white);
+  color: rgba(20, 19, 19, 0.829);
 }
 
 .major_icon i {
@@ -224,7 +233,7 @@ button {
 
 .major_title,
 .major_description {
-  color: var(--color-light-white);
+  color: rgb(216, 147, 94);;
 }
 
 .major_description {
@@ -257,7 +266,11 @@ button {
 /* skill */
 
 #skills {
-  background-color: var(--color-light-grey);
+  background-color: rgb(119, 103, 103);
+}
+
+.section_container h2{
+  color: #581b2a;
 }
 
 .skillset {
@@ -310,6 +323,10 @@ button {
 }
 
 /* work */
+
+#work{
+  background-color: #815959;
+}
 .category_btn.active,
 .category_btn:hover {
   background-color: var(--color-dark-white);
