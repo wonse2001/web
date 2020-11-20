@@ -154,6 +154,13 @@ button {
   padding-top: 120px;
   text-align: center;
 }
+.home_contact{
+  color: rgb(255, 9, 9);
+}
+
+.home_contact:hover{
+  background-color: rgb(70, 39, 39);
+}
 
 .home_avatar {
   width: 250px;
