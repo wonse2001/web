@@ -125,16 +125,13 @@ button {
   padding: 8px 12px;
   margin: 0 20px;
   cursor: pointer;
-  border-radius: var(--size-border-radius);
-}
-
-.navbar_menu_item.active {
-  border: 1px solid var(--color-white);
+  color: wheat;
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
 }
 
 .navbar_menu_item:hover {
-  border: 1px solid var(--color-white);
+  border-color: var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
@@ -330,7 +327,7 @@ button {
 #work {
   background-color: #815959;
 }
-.category_btn.active,
+.category_btn.selected,
 .category_btn:hover {
   background-color: var(--color-dark-white);
   color: var(--color-white);
@@ -347,7 +344,7 @@ button {
   padding: 8px 48px;
 }
 
-.category_btn.active .categoty_count,
+.category_btn.selected .categoty_count,
 .category_btn:hover .categoty_count {
   opacity: 1;
   top: 0;
