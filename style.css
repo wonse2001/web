@@ -129,13 +129,11 @@ button {
 }
 
 .navbar_menu_item.active {
-  border: 1px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
 .navbar_menu_item:hover {
-  border: 1px solid var(--color-white);
-  border-radius: var(--size-border-radius);
+  background-color: rgb(71, 14, 14);
 }
 
 .navbar_toggle-btn {
@@ -168,11 +166,11 @@ button {
 
 .home_title,
 .home_description {
-  color: wheat;
+  color: rgb(12, 8, 6);
 }
 
 .home_contact {
-  color: rgb(235, 23, 23);
+  color: rgb(168, 0, 0);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
