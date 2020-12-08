@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="youtube.css">
+    <script defer src="youtube.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7091e5da50.js" 
+    crossorigin="anonymous"></script>    
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <a href="#" class="title">Youtube</a>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+
+    <!-- Video Player -->
+    <section class="player">
+        <video controls src="video/sam-smith.mp4"></video>
+    </section>
+
+    <!-- Video Info-->
+    <div class="infoAndUpNext">
+        <section class="info">
+            <div class="metadata">
+                <ul class="hashtags">
+                    <a href="#">#KG_ITBANK</a>
+                    <a href="#">#Youtube</a>
+                    <a href="#">#Wonse</a>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title clamp">KG-ITBANK 반응형 자바 웹 개발자 양성:HTML, CSS, Javascript 등 사용해서
+                        반응형 웹 사이트 만들기
+                    </span>
+                 
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="views">
+                    <span class="views">1M views 1 month ago</span>   
+                </div>  
+            </div>
+            <ul class="actions">
+                <li>
+                    <button><i class="active fas fa-thumbs-up" active></i><span>0</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-share"></i><span>Share</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-plus"></i><span>Save</span></button>
+                </li>
+                <li>
+                    <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
+                </li>
+            </ul>
+            <div class="channel">
+                <div class="metadata">
+                    <img src="image/user_avatar_admin_web_mobile_business_office-512-removebg-preview.png" alt="">
+                    <div class="info">
+                        <span class="name">아이티뱅크 by 원세</span>
+                        <span class="subscribers">구독자 0명</span>
+                    </div>
+                </div>
+                <button class="subscribe">subscribe</button>
+            </div>
+        </section>
+    
+        <section class="upNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <div class="video"><video controls src="video/videoplayback.mp4"></video></div>
+                    <div class="info">
+                        <span class="title">Luis Fonsi - Despacito ft. Daddy Yankee</span>
+                        <span class="name">Luis Fonsi</span>
+                        <span class="view">0</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="video"><video controls src="video/maroon5.mp4"></video></div>
+                    <div class="info">
+                        <span class="title">Maroon 5 - Sugar (Lyrics)</span>
+                        <span class="name">Maroon5</span>
+                        <span class="view">0</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="video"><video controls src="video/zedd,maren-morie.mp4"></video></div>
+                    <div class="info">
+                        <span class="title">Zedd, Grey - The Middle (Lyrics) ft. Maren Morris</span>
+                        <span class="name">SyrebralVides</span>
+                        <span class="view">0</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
