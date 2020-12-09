@@ -5,3 +5,10 @@ moreBtn.addEventListener('click', () => {
     moreBtn.classList.toggle('clicked');
     title.classList.toggle('clamp');
 });
+
+const toggleBtn = document.querySelector('.header_toggleBtn');
+const menu = document.querySelector('.header_menu');
+
+toggleBtn.addEventListener('click', () =>{
+    menu.classList.toggle('active');
+});

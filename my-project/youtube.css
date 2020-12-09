@@ -30,7 +30,7 @@ ul {
 }
 
 body {
-  font-family: Roboto;
+  font-family: "Open Sans";
 }
 
 header {
@@ -49,12 +49,47 @@ header .logo a {
   color: rgb(224, 224, 224);
 }
 
-header .logo i {
+header .header_toggleBtn {
+  position: absolute;
+  left: 15px;
+}
+
+header .logo i.fa-youtube {
   color: rgb(255, 16, 16);
+  margin-left: 34px;
 }
 
 header .icons .fa-search {
   margin-right: var(--padding);
+  margin-left: 111px;
+}
+
+.header_menu {
+  display: none;
+  padding: 24px 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header_menu li {
+  padding: 10px 0px;
+}
+
+.header_menu a {
+  color: rgb(204, 204, 204);
+  font-size: large;
+}
+
+.header_menu a:hover {
+  padding: var(--padding);
+  background-color: rgb(104, 36, 36);
+  border-radius: 4px;
+}
+
+.header_menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .player {
@@ -245,7 +280,7 @@ body > .info {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 736px) {
   .infoAndUpNext {
     flex-direction: row;
     margin: var(--padding) 0;

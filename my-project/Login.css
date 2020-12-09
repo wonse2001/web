@@ -1,0 +1,78 @@
+a {
+  text-decoration: none;
+  color: rgb(92, 92, 92);
+}
+
+body {
+  background-color: rgb(228, 228, 228);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.LogoAndTitle {
+  display: flex;
+  font-size: 32px;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.LogoAndTitle i {
+  font-size: 90px;
+  color: red;
+}
+
+.IdAndPw {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.IdAndPw input,
+button {
+  height: 35px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+.IdAndPw input {
+  margin-bottom: 20px;
+}
+
+.IdAndPw button {
+  margin-top: 24px;
+}
+
+.IdAndPw button:hover {
+  background-color: rgb(241, 63, 63);
+  cursor: pointer;
+}
+
+.MemberAndDelete {
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 45px;
+}
+
+.MemberAndDelete a {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.MemberAndDelete a:hover {
+  border-radius: 4px;
+
+  background-color: rgb(241, 63, 63);
+  color: rgb(236, 236, 236);
+}
