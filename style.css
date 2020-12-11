@@ -162,6 +162,7 @@ button {
   height: 250px;
   border-radius: 50%;
   border: 2px solid var(--color-white);
+  align-items: center;
 }
 
 .home_title,

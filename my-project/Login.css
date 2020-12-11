@@ -1,18 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
+
 a {
   text-decoration: none;
   color: rgb(92, 92, 92);
 }
-
-body {
-  background-color: rgb(228, 228, 228);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.wrapper {
+body {
+  background-color: rgb(17, 17, 17);
+  font-family: "Noto Sans KR", sans-serif;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .LogoAndTitle {
@@ -20,7 +24,11 @@ body {
   font-size: 32px;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 60px;
+}
+
+.LogoAndTitle span {
+  color: rgb(226, 226, 226);
 }
 
 .LogoAndTitle i {
@@ -28,39 +36,72 @@ body {
   color: red;
 }
 
-.IdAndPw {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
+.login.form {
+  position: relative;
+  z-index: 2;
 }
 
-.IdAndPw input,
-button {
-  height: 35px;
-  border-radius: 4px;
-  outline: none;
+.int-area {
+  width: 400px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.int-area:first-child {
+  margin-top: 0px;
+}
+
+.int-area input {
+  width: 100%;
+  padding: 20px 10px 10px;
+  background-color: transparent;
   border: none;
+  border-bottom: 1px solid #999;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
 }
 
-.IdAndPw input {
-  margin-bottom: 20px;
+.int-area label {
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  font-size: 18px;
+  color: rgb(236, 24, 41);
+  transition: all 0.3s ease;
 }
 
-.IdAndPw button {
-  margin-top: 24px;
+.int-area input:focus + label,
+.int-area input:valid + label {
+  top: -2px;
+  font-size: 13px;
 }
 
-.IdAndPw button:hover {
-  background-color: rgb(241, 63, 63);
+.btn-area {
+  margin-top: 30px;
+}
+
+.btn-area button {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.btn-area button:hover {
+  background-color: rgb(241, 63, 63);
 }
 
 .MemberAndDelete {
   display: flex;
   margin-top: 24px;
   justify-content: space-between;
-  align-items: center;
-  width: 300px;
+  text-align: center;
+  width: 100%;
   height: 45px;
 }
 
@@ -68,6 +109,7 @@ button {
   padding: 8px 12px;
   display: flex;
   align-items: center;
+  color: rgb(226, 226, 226);
 }
 
 .MemberAndDelete a:hover {

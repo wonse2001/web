@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="youtube.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7091e5da50.js" 
+    crossorigin="anonymous"></script>    
+    <script defer src="youtube.js"></script>
+<body>
+    <!-- header -->
+    <header>  
+        <div class="logo">
+           
+            <i class="fab fa-youtube"></i>
+            <a href="#" class="title">Youtube</a> 
+        </div>
+
+       
+        <ul class="header_menu">
+            <li><a href="">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="#">My video</a></li>
+        </ul>
+
+        <a href="#" class="header_toggleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+
+    </header>
+
+    <!-- Video Player -->
+    <section class="player">
+        <video controls src="video/maroon.mp4"></video>
+    </section>
+    <div class="video_title">
+        Maroon 5 - Sugar (Lyrics)
+    </div>
+    <div class="video_view">
+        조회수 0 회 • 2015. 1. 15
+    </div>
+    <!-- Video Info-->
+    <div class="infoAndUpNext">
+        
+        <section class="info">
+            <div class="metadata">
+                <ul class="hashtags">
+                    <a href="http://www.itbank.kr/?n_media=335738&n_query=KGITBANK&n_rank=1&n_ad_group=grp-m001-01-000001941490681&n_ad=nad-a001-01-000000078105903&n_keyword_id=nkw-m001-01-000001941490684&n_keyword=KGITBANK&n_campaign_type=1&n_ad_group_type=1#none">#KG_ITBANK</a>
+                    <a href="https://www.youtube.com/">#Youtube</a>
+                    <a href="https://github.com/wonse2001/web/tree/main/my-project">#Wonse</a>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title clamp">KG-ITBANK 반응형 자바 웹 개발자 양성:HTML, CSS, Javascript 등 사용해서
+                        반응형 웹 사이트 만들기
+                    </span>
+                 
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>  
+            </div>
+            <ul class="actions">
+                <li>
+                    <button><i class="active fas fa-thumbs-up" active></i><span>0</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-share"></i><span>Share</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-plus"></i><span>Save</span></button>
+                </li>
+                <li>
+                    <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
+                </li>
+            </ul>
+            <div class="channel">
+                <div class="metadata">
+                    <img src="image/user_avatar_admin_web_mobile_business_office-512-removebg-preview.png" alt="">
+                    <div class="info">
+                        <span class="name">아이티뱅크 by 원세</span>
+                        <span class="subscribers">구독자 0명</span>
+                    </div>
+                </div>
+                <button class="subscribe">subscribe</button>
+            </div>
+        </section>
+    
+        <section class="upNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <div class="video"><video controls src="video/postmalon.mp4"></video></div>
+                    <div class="info">
+                        <a href="postmalon.html" class="title">Post Malone - Circles</a>
+                        <span class="name">Post Malone</span>
+                        <span class="view">조회수 0 회 • 2019. 9. 3</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="video"><video controls src="video/sam-smith.mp4"></video></div>
+                    <div class="info">
+                        <a href="youtube.html" class="title">Sam Smith - I'm Not The Only One (lyrics)</a>
+                        <span class="name">Sam Smith</span>
+                        <span class="view">조회수 0 회 • 2014. 8. 1</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="video"><video controls src="video/videoplayback.mp4"></video></div>
+                    <div class="info">
+                        <a href="Luis Fonsi.html" class="title">Luis Fonsi - Despacito ft. Daddy Yankee</a>
+                        <span class="name">Luis Fonsi</span>
+                        <span class="view">조회수 0 회 • 2017. 1. 13</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

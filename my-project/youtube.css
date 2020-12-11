@@ -30,7 +30,7 @@ ul {
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: "Roboto";
 }
 
 header {
@@ -43,6 +43,7 @@ header {
 
 header .logo {
   font-size: var(--font-large);
+  margin-right: 18px;
 }
 
 header .logo a {
@@ -50,13 +51,15 @@ header .logo a {
 }
 
 header .header_toggleBtn {
-  position: absolute;
-  left: 15px;
+  right: 15px;
+  margin-right: var(--padding);
+  margin-left: 96px;
+  color: rgb(204, 204, 204);
+  font-size: large;
 }
 
 header .logo i.fa-youtube {
   color: rgb(255, 16, 16);
-  margin-left: 34px;
 }
 
 header .icons .fa-search {
@@ -110,10 +113,24 @@ body > .info {
 .info {
   width: 150%;
 }
+
+.video_title {
+  padding: 4px 12px;
+  font-size: var(--font-large);
+}
+
+.video_view {
+  padding: 4px 12px;
+  font-size: 14px;
+  color: rgb(109, 106, 106);
+}
+
 .info .metadata .hashtags {
   display: flex;
   font-size: var(--font-small);
   color: rgb(44, 44, 235);
+  margin-bottom: var(--padding);
+  margin-left: 8px;
 }
 
 .info .metadata .hashtags a {
@@ -122,7 +139,8 @@ body > .info {
 }
 
 .info .metadata .hashtags a:hover {
-  color: rgb(0, 0, 163);
+  transform: scale(1.1);
+  transition: all 300ms;
 }
 
 .info .metadata .titleAndButton {
@@ -132,6 +150,7 @@ body > .info {
 .info .metadata .titleAndButton .title {
   font-size: var(--font-medium);
   margin-right: var(--padding);
+  margin-bottom: 20px;
 }
 
 .info .metadata .titleAndButton .title.clamp {
@@ -175,6 +194,11 @@ body > .info {
   margin-bottom: calc(var(--padding));
   font-size: 16px;
   color: rgb(77, 77, 77);
+}
+
+.actions button i:hover {
+  transform: scale(1.3);
+  transition: all 300ms;
 }
 
 .actions button i.active {
@@ -222,13 +246,16 @@ body > .info {
   border-radius: 4px;
   width: 100px;
   height: 45px;
-  font-size: var(--font-medium);
+  font-size: 16px;
 }
 
 .upNext {
   padding: 0 var(--padding);
 }
 
+.upNext a {
+  color: black;
+}
 .upNext > .title {
   font-size: var(--font-medium);
   color: rgb(71, 68, 68);

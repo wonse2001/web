@@ -12,3 +12,4 @@ const menu = document.querySelector('.header_menu');
 toggleBtn.addEventListener('click', () =>{
     menu.classList.toggle('active');
 });
+
